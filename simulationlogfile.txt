@@ -1,3 +1,3 @@
 info,Datensatz 1,999,410116611, success
  
-Nicht verarbeitete Zeilen: 0 Verarbeitete Zeilen: 1 
+Nicht verarbeitete Zeilen: 999 Verarbeitete Zeilen: 1000
