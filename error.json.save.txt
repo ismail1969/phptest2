@@ -1,0 +1,19 @@
+
+TypeError: Argument 1 passed to crmi\batch\types\DAPriceAdjustment::getTaxInformation() must be of the type string, null given, called in /app/lib/batch/types/priceadjustment/dapriceadjustment.php on line 453 in /app/lib/batch/types/priceadjustment/dapriceadjustment.php on line 378
+
+Call Stack:
+    0.1013     431216   1. {main}() /app/cron.php:0
+    9.2905   12182232   2. crmi\cron\Batch->execute(???) /app/cron.php:212
+    9.4880   19902200   3. crmi\cron\Batch->execute(???) /app/lib/cron/cron.php:2580
+    9.4947   19901928   4. crmi\cron\Batch->run(???) /app/lib/cron/cron.php:761
+   10.5219   22076864   5. crmi\cron\Batch->startParallel(???, ???) /app/lib/cron/batch.php:99
+   10.5363   22105304   6. crmi\cron\Batch->runBatchCrons(???, ???, ???, ???) /app/lib/cron/batch.php:121
+   10.6244   27274368   7. crmi\batch\types\DAPriceAdjustment->execute(???, ???, ???, ???) /app/lib/cron/batch.php:147
+   10.6332   27716896   8. crmi\batch\types\DAPriceAdjustment->doImport(???, ???) /app/lib/batch/batch.php:302
+   10.6556   27721344   9. crmi\batch\types\DAPriceAdjustment->import(???) /app/lib/batch/batch.php:505
+   10.6587   27788304  10. crmi\batch\types\DAPriceAdjustment->processLine(???, ???) /app/lib/batch/batch.php:568
+   11.0571   35724336  11. crmi\batch\types\DAPriceAdjustment->priceAdjustDepositManagement(???, ???, ???) /app/lib/batch/types/dapriceadjustment.php:152
+   12.5587   36736064  12. crmi\batch\types\DAPriceAdjustment->managePriceAdjustment(???, ???, ???, ???) /app/lib/batch/types/priceadjustment/dapriceadjustment.php:271
+   14.3669   36752032  13. crmi\batch\types\DAPriceAdjustment->dispatchEventContractTariffChangedPriceAdjustment(???, ???, ???) /app/lib/batch/types/priceadjustment/dapriceadjustment.php:611
+   62.7923   36868864  14. crmi\batch\types\DAPriceAdjustment->getImsysScaleStructure(???) /app/lib/batch/types/priceadjustment/dapriceadjustment.php:502
+   65.8638   36901968  15. crmi\batch\types\DAPriceAdjustment->getTaxInformation(???) /app/lib/batch/types/priceadjustment/dapriceadjustment.php:453
