@@ -1,4 +1,4 @@
-easyman: remote change
+easyman: remote-XXX--change
 TypeError: Argument 1 passed to crmi\batch\types\DAPriceAdjustment::getTaxInformation() must be of the type string, null given, called in /app/lib/batch/types/priceadjustment/dapriceadjustment.php on line 453 in /app/lib/batch/types/priceadjustment/dapriceadjustment.php on line 378
 
 Call Stack:
